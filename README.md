@@ -35,14 +35,14 @@ Follow these steps to set up and run the project locally:
 
 	Pass the hardware camera light and distance ranges along with the desired range for the software camera like below. Using the cli interface run the application
 
-		```bash
-		ruby camera_support_cli.rb "[hardware cameras distance ranges]" "[hardware cameras light ranges]" "software camera's desired distance range" "software camera's desired light range"
-		```
+	```bash
+	ruby camera_support_cli.rb "[hardware cameras distance ranges]" "[hardware cameras light ranges]" "software camera's desired distance range" "software camera's desired light range"
+	```
 		
-		Example
-		```bash
-		ruby camera_support_cli.rb "1,5;6,10;10,15" "100,150;150,200;50,100" "1,11" "100,200"
-		```
+	*Example*
+	```bash
+	ruby camera_support_cli.rb "1,5;6,10;10,15" "100,150;150,200;50,100" "1,11" "100,200"
+	```
 ## Running Tests
 
 **Install minitest:**
