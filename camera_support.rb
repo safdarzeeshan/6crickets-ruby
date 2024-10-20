@@ -27,8 +27,8 @@ class CameraSupport
 
   private
 
-	# Merges overlapping ranges and organizes them in ascending order. This method also takes into account 
-	# ranges that are non-contiguous.
+  # Merges overlapping ranges and organizes them in ascending order. This method also takes into account 
+  # ranges that are non-contiguous.
   def merge_ranges(ranges)
     sorted_ranges = ranges.sort_by(&:first)
     sorted_ranges.reduce([]) do |merged, current|
