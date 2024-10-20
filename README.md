@@ -10,9 +10,7 @@ Suppose we want to construct a versatile software camera by combining many infle
 
 In this project, I approached the problem by:
 
-1. **Understanding Requirements**: We have a list of hardware camera where each hardware camera has two specifications which is the range of subject distance and range of light levels it supports.
-
-We will build a function that takes the desired range of subject distance and light levels needed and checks if the combined list of cameras in the list of hardware cameras will support it. 
+1. **Understanding Requirements**: We have a list of hardware camera where each hardware camera has two specifications which is the range of subject distance and range of light levels it supports.We will build a function that takes the desired range of subject distance and light levels needed and checks if the combined list of cameras in the list of hardware cameras will support it. 
 
 2. **Assumptions**: The ranges provided by the hardware cameras can be non-contigous. There might be a range skipped between two hardware camera. Such as camera A will have a light range 2-10 and camera B will have a light range 13-20. So in this case if the software camera requires a light value of 12 the hardware cameras can not support it.
 
