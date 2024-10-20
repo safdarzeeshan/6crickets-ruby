@@ -14,15 +14,15 @@ class CameraSupport
   public
 
   def sufficient_hardware_cameras?(hw_camera_distance_ranges, hw_camera_light_ranges, 
-  sw_camera_desired_distance_range, sw_camera_desired_light_range)
+    sw_camera_desired_distance_range, sw_camera_desired_light_range)
 
-  merged_distance_ranges = merge_ranges(hw_camera_distance_ranges)
-  merged_light_ranges = merge_ranges(hw_camera_light_ranges)
+    merged_distance_ranges = merge_ranges(hw_camera_distance_ranges)
+    merged_light_ranges = merge_ranges(hw_camera_light_ranges)
 
-  distance_fully_covered = ranges_fully_covered?(merged_distance_ranges, sw_camera_desired_distance_range)
-  light_fully_covered = ranges_fully_covered?(merged_light_ranges, sw_camera_desired_light_range)
+    distance_fully_covered = ranges_fully_covered?(merged_distance_ranges, sw_camera_desired_distance_range)
+    light_fully_covered = ranges_fully_covered?(merged_light_ranges, sw_camera_desired_light_range)
 
-  distance_fully_covered && light_fully_covered
+    distance_fully_covered && light_fully_covered
   end
 
   private
